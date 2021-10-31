@@ -1,0 +1,1056 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+a:active {
+   color: red;
+}
+body {
+   font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+.hamburger {
+   display: none;
+}
+span {
+   display: none;
+}
+.checkbox {
+   display: none;
+}
+figure {
+   max-width: 360px;
+}
+figcaption {
+   background-color: #222;
+   color: #fff;
+
+   text-align: center;
+}
+@media only screen and (min-width: 1280px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .navbar {
+      display: flex;
+      background-color: #f5f5f5;
+      width: 100%;
+      height: 10vh;
+
+      align-items: center;
+      justify-content: space-around;
+      z-index: 9;
+      box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.59);
+   }
+   .navbar a {
+      letter-spacing: 2px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #002;
+      font-weight: bolder;
+   }
+
+   #travelPromoVideo {
+      height: 50vh;
+      left: 0;
+      align-items: center;
+      order: 1;
+   }
+
+   #travelPromoVideo video {
+      height: 45vh;
+   }
+
+   .navbar h1 {
+      font-size: 1.8rem;
+      display: block;
+   }
+
+   .navbar ul {
+      width: 30%;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .navbar ul li {
+      margin: 10px;
+   }
+   .navbar a {
+      padding: 10px;
+   }
+   .navbar a:hover {
+      color: grey;
+
+      background-color: #fff;
+   }
+
+   /*ARTICLES*/
+
+   .section-1 {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+   }
+
+   .footerMoreInfo {
+      float: right;
+   }
+
+   .section-1 article {
+      width: 70vw;
+      height: 40vh;
+      word-spacing: 4px;
+   }
+
+   .section-1 h2 {
+      text-align: center;
+      width: 60%;
+   }
+
+   .section-1 img {
+      height: 175px;
+      width: 360px;
+      float: right;
+   }
+   .section-1 article p {
+      width: 60vw;
+      word-spacing: 4px;
+   }
+   .section-1 article p::first-letter {
+      font-size: 200%;
+      color: black;
+   }
+
+   /* ASIDE */
+   .topFiveDestinations {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      width: 17em;
+      height: 100%;
+      border-width: 0.1em;
+      border-style: double;
+      border-color: black;
+      background: #ffc72b;
+      position: absolute;
+      right: 0;
+      top: 72vh;
+   }
+
+   .topFiveDestinations h2 {
+      padding: 10px;
+      text-transform: uppercase;
+   }
+   /*FOOTER*/
+   #footerHomePage {
+      background-color: #808080;
+   }
+
+   /*Cookie statement*/
+   .cookieStatement {
+      color: #fff;
+      background-color: #fa0;
+      opacity: 50%;
+      width: 150px;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      padding: 10px;
+      z-index: 9999;
+   }
+   .section-1 figure {
+      float: right;
+   }
+   .istanbulHeader h2 + p {
+      color: red;
+   }
+}
+/*TABLET*/
+@media only screen and (max-width: 1179px) and (min-width: 481px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .navbar {
+      display: flex;
+      background-color: #f5f5f5;
+
+      height: 20vh;
+
+      align-items: center;
+      justify-content: space-around;
+      z-index: 9;
+      box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.59);
+   }
+   .navbar a {
+      letter-spacing: 2px;
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: black;
+
+      font-weight: bolder;
+   }
+
+   #travelPromoVideo {
+      height: 50vh;
+      width: 480px;
+   }
+
+   #travelPromoVideo video {
+      height: 45vh;
+      width: 480px;
+   }
+
+   .navbar h1 {
+      font-size: 1.7rem;
+      display: block;
+   }
+
+   .navbar ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .navbar ul li {
+      margin: 10px;
+   }
+   .navbar a {
+      padding: 10px;
+   }
+   .navbar a:hover {
+      color: grey;
+
+      background-color: white;
+   }
+
+   /*ARTICLES*/
+
+   .section-1 {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .section-1 article {
+      height: 40vh;
+      word-spacing: 4px;
+      margin-bottom: 100px;
+   }
+
+   .section-1 img {
+      height: 130px;
+      width: 290px;
+
+      float: left;
+   }
+   .section-1 figure {
+      float: left;
+   }
+   .section-1 article p::first-letter {
+      font-size: 200%;
+      color: black;
+   }
+
+   /* ASIDE */
+   .topFiveDestinations {
+      text-align: left;
+      word-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      border-width: 0.1em;
+      border-style: double;
+      border-color: black;
+      background: #ffc72b;
+   }
+
+   .topFiveDestinations h2 {
+      text-transform: uppercase;
+   }
+
+   .topFiveDestinations li {
+      font-weight: bolder;
+      text-align: left;
+   }
+   .topFiveDestinations p {
+      text-indent: 2em;
+      text-align: left;
+   }
+   /*FOOTER*/
+   #footerHomePage {
+      background-color: grey;
+   }
+
+   /*Cookie statement*/
+   .cookieStatement {
+      color: #fff;
+      background-color: #fa0;
+      opacity: 50%;
+      width: 150px;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      padding: 10px;
+      z-index: 9999;
+   }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 480px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .checkbox {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 38px;
+      z-index: 99;
+      opacity: 0;
+   }
+   .topFiveDestinations p {
+      text-indent: 2em;
+      text-align: left;
+   }
+   .payoff {
+      height: 30vh;
+      background-color: grey;
+      width: 60%;
+   }
+   /* HAMBURGERMENU */
+
+   .hamburger {
+      display: flex;
+      flex-direction: column;
+      margin: 10px 8px 10px 8px;
+   }
+   span {
+      right: 0;
+      display: inline-block;
+      top: 10px;
+      width: 33px;
+      height: 4px;
+      margin: 2px;
+      background: black;
+      border-radius: 3px;
+   }
+
+   .navbar {
+      top: 0;
+      background-color: lightblue;
+
+      display: flex;
+      flex-direction: column;
+   }
+   .navbar a {
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: black;
+      font-weight: bolder;
+   }
+   .checkbox:checked ~ ul {
+      transform: none;
+      display: flex;
+   }
+
+   #travelPromoVideo {
+      display: none;
+   }
+
+   #travelPromoVideo video {
+      display: none;
+   }
+
+   .navbar {
+      right: 0;
+      position: absolute;
+   }
+
+   .navbar ul {
+      overflow: hidden;
+      display: none;
+      right: 0;
+      margin-top: 30px;
+
+      flex-direction: column;
+
+      text-align: end;
+      margin-right: 0;
+
+      list-style-type: none;
+   }
+
+   .navbar li {
+      padding-top: 20px;
+   }
+
+   .navbar a:hover {
+      color: grey;
+
+      background-color: white;
+   }
+
+   /*ARTICLES*/
+
+   .section-1 {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .section-1 article {
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column-reverse;
+      word-spacing: 4px;
+   }
+
+   .section-1 h2 {
+      text-align: center;
+   }
+
+   .section-1 img {
+      height: 130px;
+      width: 290px;
+      float: left;
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+   }
+   .section-1 figure {
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+   }
+   .section-1 article p {
+      float: inherit;
+      word-spacing: 4px;
+   }
+   /* ASIDE */
+   .topFiveDestinations {
+      width: 100%;
+      word-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      height: 100%;
+
+      margin-top: 30px;
+      border-width: 0.1em;
+      border-style: double;
+      border-color: black;
+      background: #ffc72b;
+      text-align: left;
+   }
+
+   .topFiveDestinations li {
+      margin-top: 40px;
+      font-weight: bold;
+   }
+   #footerHomePage {
+      background-color: grey;
+   }
+
+   /*Cookie statement*/
+   .cookieStatement {
+      color: #fff;
+      background-color: #fa0;
+      opacity: 50%;
+      width: 150px;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      padding: 10px;
+      z-index: 9999;
+   }
+   .section-1 figure img {
+      max-width: fit-content;
+   }
+}
+/*FOOTER*/
+
+/*DESKTOP DESTINATION.HTML*/
+@media (min-width: 1280px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .destination-1 {
+      grid-area: sriLankaTag;
+      background-color: #90ee90;
+   }
+   .destination-2 {
+      grid-area: canadaTag;
+      background-color: #3380ff;
+   }
+   .destination-3 {
+      background-color: #ee33ff;
+      grid-area: serbiaTag;
+   }
+   .destination-4 {
+      grid-area: madagascarTag;
+      background-color: #fbff33;
+   }
+   .destination-5 {
+      grid-area: mongoliaTag;
+      background-color: #ffbe33;
+   }
+   .destination-6 {
+      grid-area: montenegroTag;
+      background-color: #33ffa8;
+   }
+
+   .canadaImage {
+      grid-area: canadaTagTwo;
+   }
+   .sriLankaImage {
+      grid-area: sriLankaTagTwo;
+   }
+   .mongoliaImage {
+      grid-area: mongoliaTagTwo;
+   }
+   .footerDestinationPage {
+      grid-area: footerTag;
+      background-color: grey;
+   }
+   aside {
+      background-color: lightcoral;
+   }
+   .grid-container-1 {
+      display: grid;
+      grid-template-areas:
+         "canadaTag . .      "
+         " . . serbiaTag     "
+         " . sriLankaTag .   "
+         "mongoliaTag . .  "
+         " . . madagascarTag "
+         ". montenegroTag .   "
+         "canadaTagTwo sriLankaTagTwo mongoliaTagTwo"
+         "footerTag footerTag footerTag ";
+
+      grid-gap: 10px;
+      padding: 10px;
+   }
+
+   aside figure {
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+   }
+   aside img {
+      width: 150px;
+
+      display: grid;
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+   }
+   .canadaImage figcaption,
+   .sriLankaImage figcaption,
+   .mongoliaImage figcaption {
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+      max-width: 150px;
+   }
+}
+/*TABLET DESTINATION*/
+@media (max-width: 1179px) and (min-width: 481px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .destination-1 {
+      grid-area: sriLankaTag;
+      background-color: lightgreen;
+   }
+   .destination-2 {
+      grid-area: canadaTag;
+      background-color: lightblue;
+   }
+   .destination-3 {
+      background-color: grey;
+      grid-area: serbiaTag;
+   }
+
+   .destination-5 {
+      grid-area: mongoliaTag;
+      background-color: orange;
+   }
+   .destination-6 {
+      grid-area: montenegroTag;
+      background-color: grey;
+   }
+   .destination-4 {
+      display: none;
+   }
+   .mongoliaImage {
+      display: none;
+   }
+   .canadaImage {
+      grid-area: canadaTagTwo;
+   }
+   .sriLankaImage {
+      grid-area: sriLankaTagTwo;
+   }
+
+   .footerDestinationPage {
+      grid-area: footerTag;
+      background-color: grey;
+   }
+   aside {
+      background-color: lightcoral;
+   }
+   .grid-container-1 {
+      display: grid;
+      grid-template-areas:
+         "sriLankaTag .      "
+         " . canadaTag     "
+         "serbiaTag .   "
+         ". mongoliaTag  "
+         "montenegroTag .   "
+         "canadaTagTwo sriLankaTagTwo "
+         "footerTag footerTag ";
+
+      grid-gap: 10px;
+      padding: 10px;
+   }
+   aside img {
+      width: 150px;
+
+      display: grid;
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+   }
+   .canadaImage figcaption,
+   .sriLankaImage figcaption,
+   .mongoliaImage figcaption {
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+      max-width: 150px;
+   }
+   aside figure {
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+   }
+}
+/*MOBILE DESTINATION*/
+@media (max-width: 480px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .destination-1 {
+      grid-area: sriLankaTag;
+      background-color: lightgreen;
+   }
+   .destination-2 {
+      grid-area: canadaTag;
+      background-color: lightblue;
+   }
+   .destination-3 {
+      background-color: grey;
+      grid-area: serbiaTag;
+   }
+
+   .destination-5 {
+      grid-area: mongoliaTag;
+      background-color: orange;
+   }
+   .destination-6 {
+      display: none;
+   }
+   .destination-4 {
+      display: none;
+   }
+   .mongoliaImage {
+      grid-area: mongoliaTagTwo;
+   }
+   .canadaImage {
+      grid-area: canadaTagTwo;
+   }
+   .sriLankaImage {
+      grid-area: sriLankaTagTwo;
+   }
+
+   .footerDestinationPage {
+      grid-area: footerTag;
+      background-color: grey;
+   }
+   aside {
+      background-color: lightcoral;
+   }
+   .grid-container-1 {
+      display: grid;
+      grid-template-areas:
+         "mongoliaTag "
+         "serbiaTag"
+         "canadaTag"
+         "sriLankaTag"
+         "canadaTagTwo"
+         "sriLankaTagTwo"
+         "mongoliaTagTwo"
+         "footerTag";
+
+      grid-gap: 10px;
+      padding: 10px;
+   }
+   aside img {
+      width: 150px;
+
+      display: grid;
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+   }
+   .canadaImage figcaption,
+   .sriLankaImage figcaption,
+   .mongoliaImage figcaption {
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+      max-width: 150px;
+   }
+
+   aside figure {
+      align-self: center;
+      justify-self: center;
+      margin: auto;
+   }
+}
+
+/* TICKETS.HTML */
+/* TICKETS DESKTOP VERSION */
+@media only screen and (min-width: 1280px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   aside p {
+      text-align: center;
+      padding: 10px;
+   }
+
+   .ticketPricesTable td:first-child {
+      background-color: #ff0;
+   }
+   .ticketPricesTable th {
+      border-collapse: collapse;
+   }
+
+   .ticketPricesTable th {
+      padding-top: 3px;
+      padding-bottom: 9px;
+      text-align: left;
+      background-color: lightblue;
+   }
+   .ticketPricesTable td {
+      border: 1.5px solid #ddd;
+      padding: 5px;
+   }
+
+   .ticketPricesTable tr:nth-child(even) {
+      background-color: #cff;
+   }
+   .ticketPricesTable tr:nth-child(odd) {
+      background-color: #fff;
+   }
+   .imageTickets {
+      grid-area: imageTicketsTag;
+   }
+   .ticketPricesTable {
+      grid-area: ticketPricesTag;
+   }
+
+   #ticketsArticle {
+      grid-area: ticketsArticleTag;
+   }
+   #copyrightInfoFooter {
+      grid-area: copyrightTag;
+   }
+   .container-section-1 {
+      display: grid;
+      grid-gap: 10px;
+      padding: 10px;
+      grid-template-areas:
+         "ticketsArticleTag ticketsArticleTag ticketsArticleTag "
+         "ticketPricesTag ticketPricesTag imageTicketsTag"
+         "copyrightTag copyrightTag copyrightTag";
+   }
+}
+
+/*TICKETS.HTML TABLET VESION */
+@media only screen and (min-width: 481px) and (max-width: 1179px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .ticketPricesTable td:first-child {
+      background-color: #ff0;
+   }
+   aside p {
+      text-align: center;
+      padding: 10px;
+   }
+   .ticketPricesTable th {
+      border-collapse: collapse;
+   }
+
+   .ticketPricesTable th {
+      padding-top: 3px;
+      padding-bottom: 9px;
+      text-align: left;
+      background-color: lightblue;
+   }
+   .ticketPricesTable td {
+      border: 1.5px solid;
+      border-color: #ddd;
+
+      padding: 5px;
+   }
+
+   .ticketPricesTable {
+      grid-row: 2 / span 1;
+   }
+
+   #ticketsArticle {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1;
+   }
+
+   #copyrightInfoFooter {
+      grid-row: 3 / span 2;
+   }
+   .canadaProduct {
+      display: inline-flex;
+   }
+   .sriLankaProduct {
+      display: inline-flex;
+      position: absolute;
+      right: 0;
+   }
+
+   .mongoliaProduct {
+      display: none;
+   }
+   .container-section-1 {
+      display: grid;
+      grid-gap: 10px;
+      padding: 10px;
+   }
+}
+/* MOBILE VERSION FOR TICKETS.HTML*/
+@media only screen and (max-width: 480px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   * {
+      overflow-x: hidden;
+   }
+   .ticketPricesTable td:first-child {
+      background-color: #ff0;
+   }
+   #ticketsArticle {
+      display: none;
+   }
+   .ticketPricesTable th {
+      border-collapse: collapse;
+   }
+
+   .ticketPricesTable th {
+      font-size: 10px;
+      width: 1px;
+      text-align: left;
+      background-color: #add8e6;
+   }
+   .ticketPricesTable td {
+      font-size: 9px;
+      border: 0.2px solid #ddd;
+      padding: 1px;
+   }
+}
+
+/*CONTACT.HTML DESKTOP VERSION*/
+
+@media (min-width: 1280px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .contactForm > ul {
+      list-style-type: none;
+   }
+   .contactForm ul > li {
+      margin-bottom: 50px;
+   }
+   .grid-container-contact h2 {
+      grid-area: contactInfoTag;
+      font-family: "Notable";
+   }
+
+   .contactForm {
+      grid-area: contactFormTag;
+   }
+   .canadaImageContact {
+      grid-area: canadaPictureTag;
+   }
+   .sriLankaImageContact {
+      grid-area: sriLankaPicTag;
+   }
+   .mongoliaImageContact {
+      grid-area: mongoliaPicTag;
+   }
+   .footerContactPage {
+      background-color: grey;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+   }
+   .grid-container-contact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+         "contactInfoTag contactInfoTag contactInfoTag"
+         "contactFormTag contactFormTag canadaPictureTag "
+         "contactFormTag contactFormTag sriLankaPicTag"
+         "contactFormTag contactFormTag mongoliaPicTag";
+   }
+   input[type="text"],
+   textarea,
+   [type="submit"],
+   [type="email"] {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 2px;
+      padding: 8px;
+      margin-bottom: 8px;
+      width: 100%;
+   }
+   input[type="submit"] {
+      cursor: pointer;
+   }
+}
+
+/*TABLET VERSION*/
+@media (min-width: 481px) and (max-width: 1179px) {
+   #travelLogo {
+      width: 100px;
+      height: 80px;
+   }
+   .contactForm > ul {
+      list-style-type: none;
+   }
+   .contactForm ul > li {
+      margin-bottom: 50px;
+   }
+   .grid-container-contact h2 {
+      grid-area: contactInfoTag;
+   }
+   .contactForm {
+      grid-area: contactFormTag;
+   }
+   .canadaImageContact {
+      grid-area: canadaPictureTag;
+   }
+   .sriLankaImageContact {
+      grid-area: sriLankaPicTag;
+   }
+   .mongoliaImageContact {
+      grid-area: mongoliaPicTag;
+   }
+   .footerContactPage {
+      background-color: grey;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+   }
+   .grid-container-contact {
+      display: grid;
+      grid-template-areas:
+         "contactInfoTag contactInfoTag"
+         "contactFormTag canadaPictureTag"
+         "contactFormTag sriLankaPicTag"
+         "contactFormTag mongoliaPicTag";
+   }
+   input[type="text"],
+   textarea,
+   [type="submit"],
+   [type="email"] {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      border-radius: 2px;
+      padding: 8px;
+      margin-bottom: 8px;
+      width: 100%;
+   }
+}
+
+/*MOBILE VERSION CONTACT.HTML*/
+@media (max-width: 480px) {
+   #travelLogo {
+      display: none;
+   }
+   .contactForm ul {
+      list-style-type: none;
+   }
+   .contactForm ul li {
+      margin-bottom: 50px;
+   }
+   .grid-container-contact h2 {
+      grid-area: contactInfoTag;
+      font-size: 1rem;
+   }
+   .contactForm {
+      grid-area: contactFormTag;
+   }
+   .canadaImageContact {
+      grid-area: canadaPictureTag;
+   }
+   .sriLankaImageContact {
+      grid-area: sriLankaPicTag;
+   }
+   .mongoliaImageContact {
+      grid-area: mongoliaPicTag;
+   }
+   .footerContactPage {
+      background-color: grey;
+      grid-area: footerContactTag;
+   }
+   .grid-container-contact {
+      display: grid;
+      grid-template-areas:
+         "contactInfoTag "
+         "contactFormTag "
+         "contactFormTag "
+         "contactFormTag "
+         "canadaPictureTag "
+         "sriLankaPicTag "
+         "mongoliaPicTag "
+         "footerContactTag";
+   }
+   input[type="text"],
+   textarea,
+   [type="submit"],
+   [type="email"] {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      border-radius: 2px;
+      padding: 8px;
+      margin-bottom: 8px;
+      width: 100%;
+   }
+}
